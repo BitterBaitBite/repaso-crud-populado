@@ -6,3 +6,23 @@ body {
 .navbar {
   margin-bottom: 50px; 
 }
+
+ul {
+  list-style: none;
+}
+
+.item {
+  display: block;
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 3px;
+  height: 80px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
