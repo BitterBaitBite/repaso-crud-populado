@@ -28,7 +28,7 @@
         <div class="form-group">
           <label for="park-list">Parque en el que se encuentra:</label>
           <select name="park_id" class="form-control" id="park-list">
-            <option>Seleccionar</option>
+            <option selected disabled>Seleccionar</option>
             {{#each parks}}
             <option value="{{_id}}">{{name}}</option>
             {{/each}}
@@ -41,6 +41,10 @@
 
       </form>
     </div>
+
+    {{#if errorMsg}}
+    <p>{{errorMsg}}</p>
+    {{/if}}
 
   </div>
 </div>

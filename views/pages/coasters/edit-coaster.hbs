@@ -32,7 +32,7 @@
           <select name="park_id" class="form-control" id="park-list">
             <option>Seleccionar</option>
             {{#each parks}}
-            <option value="{{_id}}">{{name}}</option>
+            <option value="{{park._id}}" {{#if selected}} selected {{/if}}> {{park.name}} </option>
             {{/each}}
 
           </select>
@@ -43,6 +43,10 @@
 
       </form>
     </div>
+
+    {{#if errorMsg}}
+    <p>{{errorMsg}}</p>
+    {{/if}}
 
   </div>
 </div>
